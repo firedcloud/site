@@ -10,6 +10,7 @@
 name: ESLint
 
 on:
+
   push:
     branches: [ main ]
   pull_request:
@@ -17,11 +18,12 @@ on:
     branches: [ main ]
   schedule:
     - cron: '40 17 * * 0'
+    
 
 jobs:
   eslint:
     name: Run eslint scanning
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     permissions:
       contents: read
       security-events: write
@@ -35,6 +37,7 @@ jobs:
           npm install @microsoft/eslint-formatter-sarif@2.1.7
 
       - name: Run ESLint
+      
         run: npx eslint .
           --config .eslintrc.js
           --ext .js,.jsx,.ts,.tsx
