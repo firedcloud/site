@@ -1,6 +1,5 @@
 import "./css/main.css";
 import "./css/dark.css";
-import "./js/okand.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import React from "react";
