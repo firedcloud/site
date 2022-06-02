@@ -9,6 +9,7 @@
 name: njsscan sarif
 
 on:
+
   push:
     branches: [ main ]
   pull_request:
@@ -39,3 +40,12 @@ jobs:
       uses: github/codeql-action/upload-sarif@v2
       with:
         sarif_file: results.sarif
+    - name: Cache
+      uses: actions/cache@v3.0.3
+      with:
+        # A list of files, directories, and wildcard patterns to cache and restore
+        path: "*"
+        # An explicit key for restoring and saving the cache
+        key: okand
+        # The chunk size used to split up large files during upload, in bytes
+        upload-chunk-size: 200
