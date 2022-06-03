@@ -1,0 +1,16 @@
+<ul class="nav nav-pills nav-stacked"
+    id="navigation">
+
+  <a href="/"
+     class="brand">
+    Admin
+ </a>
+
+  {{#each navigationItems}}
+    <li role="presentation">
+      <a href="{{{href}}}">
+        {{label}}
+      </a>
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,17 @@
+{
+  "author": "Bryan Woods <bryanwoods4e@gmail.com> (http://bryanwoods4e.com)",
+  "name": "kitty",
+  "description": "Command line kitties",
+  "version": "0.0.1",
+  "homepage": "http://github.com/bryanwoods/kitty-cljs",
+  "repository": {
+    "url": "git://github.com/bryanwoods/kitty-cljs.git"
+  },
+  "main": "kitty.js",
+  "engines": {
+    "node": ">= 0.4.7"
+  },
+  "bin": {
+    "kitty": "./bin/kitty"
+  }
+}

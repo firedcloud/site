@@ -1,0 +1,18 @@
+{
+  "name": "is-boolean-attribute",
+  "version": "0.0.1",
+  "description": "See if an node attribute is a boolean",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anthonyshort/is-boolean-attribute.git"
+  },
+  "author": "Anthony Short",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anthonyshort/is-boolean-attribute/issues"
+  }
+}

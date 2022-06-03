@@ -1,0 +1,40 @@
+{
+  "name": "woah",
+  "version": "0.0.1-alpha.1",
+  "description": "Transpiles your React component and serves it on localhost",
+  "main": "index.js",
+  "bin": {
+    "woah": "./bin/cli.js"
+  },
+  "scripts": {
+    "example0": "node ./bin/cli.js ./examples/0-nothing/index.js",
+    "example1": "node ./bin/cli.js ./examples/1-hello-world/index.js",
+    "example2": "node ./bin/cli.js ./examples/2-react-element/index.js",
+    "example3": "node ./bin/cli.js ./examples/3-react-function/index.js",
+    "example4": "node ./bin/cli.js ./examples/4-react-class/index.js",
+    "lint": "eslint .",
+    "prepublishOnly": "npm run lint"
+  },
+  "author": "Vladislav Sapozhnikov <me@lastw.net>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "minimist": "^1.2.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-commonjs": "^8.2.1",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-replace": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "eslint": "^4.8.0",
+    "eslint-plugin-react": "^7.4.0"
+  }
+}
