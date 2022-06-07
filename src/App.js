@@ -1,4 +1,3 @@
-import { switchTheme } from "./js/okand.js";
 function App() {
   return (
     <div className="App">
