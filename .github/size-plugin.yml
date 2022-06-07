@@ -1,0 +1,7 @@
+size-files: # list of size*.json files incase you have multiple packages.
+    - *
+base-branches: # base branches against which bot can open a pull request.
+    - preview
+    - main
+    - b
+    - a
