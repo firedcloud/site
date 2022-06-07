@@ -1,23 +1,37 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# dependencies
-/node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/normalize-package-data/
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/fs.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/graceful-fs.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/legacy-streams.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/LICENSE
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/package.json
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/polyfills.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/README.md
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/index.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/license
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/package.json
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/readme.md
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/fs.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/graceful-fs.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/legacy-streams.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/LICENSE
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/package.json
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/polyfills.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/graceful-fs/README.md
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/index.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/license
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/package.json
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/readme.md
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/vendor/parse.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/parse-json/vendor/unicode.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/pinkie-promise/index.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/pinkie-promise/readme.md
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/pinkie-promise/package.json
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/pinkie-promise/license
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/strip-bom/index.js
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/strip-bom/license
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/strip-bom/package.json
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/load-json-file/node_modules/strip-bom/readme.md
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/path-type/node_modules/pinkie-promise/readme.md
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/path-type/node_modules/pinkie-promise/license
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/path-type/node_modules/pinkie-promise/package.json
+node_modules/bootswatch/docs/3/node_modules/grunt-contrib-uglify/node_modules/maxmin/node_modules/pretty-bytes/node_modules/meow/node_modules/read-pkg-up/node_modules/read-pkg/node_modules/path-type/node_modules/pinkie-promise/index.js
