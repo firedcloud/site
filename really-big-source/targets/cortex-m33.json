@@ -1,0 +1,4 @@
+{
+    "inherits": ["cortex-m"],
+    "llvm-target": "thumbv7m-unknown-unknown-eabi"
+}
