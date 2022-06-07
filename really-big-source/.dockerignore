@@ -1,3 +1,8 @@
+*~
+*.swp
+**/.terraform/
+target/
+**/*Dockerfile
+*.md
 build/
-llvm-*/
-
+storage/

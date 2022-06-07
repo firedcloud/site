@@ -1,0 +1,226 @@
+{
+  "title": "Sui Developer Portal",
+  "tagline": "Welcome to Sui, a next-generation smart contract platform with high throughput, low latency, and an asset-oriented programming model powered by Move",
+  "URL": "https://docs.sui.io/",
+  "baseUrl": "/",
+  "favIcon": "/favicon2.png",
+  "organizationName": "Mysten Labs",
+  "projectName": "Dev Portal",
+  "footerData": {
+    "copyRight": "©2022 Copyright Sui. All rights reserved.",
+    "privacyPolicy": {
+      "label": "Privacy Policy",
+      "link": "https://sui.io/policy/"
+    },
+    "terms": {
+      "label": "Terms of Service",
+      "link": "https://sui.io/terms/"
+    },
+    "menu": [
+      {
+        "title": "Docs",
+        "listItems": [
+          {
+            "title": "Getting Started",
+            "link": "/build/move"
+          },
+          {
+            "title": "SDK Reference",
+            "link": "https://playground.open-rpc.org/?uiSchema%5BappBar%5D%5Bui:splitView%5D=false&schemaUrl=https://raw.githubusercontent.com/MystenLabs/sui/main/sui/open_rpc/spec/openrpc.json&uiSchema%5BappBar%5D%5Bui:input%5D=false",
+            "external": true
+          },
+          {
+            "title": "Prototypes",
+            "link": "/explore/prototypes"
+          }
+        ]
+      },
+      {
+        "title": "Community",
+        "listItems": [
+          {
+            "title": "Discord",
+            "link": "https://discord.gg/sui",
+            "external": true
+          },
+          {
+            "title": "Twitter",
+            "link": "https://twitter.com/mysten_labs/",
+            "external": true
+          },
+          {
+            "title": "Medium",
+            "link": "https://medium.com/mysten-labs/",
+            "external": true
+          }
+        ]
+      },
+      {
+        "title": "Team",
+        "listItems": [
+          {
+            "title": "GitHub",
+            "link": "https://github.com/MystenLabs",
+            "external": true
+          },
+          {
+            "title": "Sui.io",
+            "link": "https://sui.io/",
+            "external": true,
+            "arrow": true
+          },
+          {
+            "title": "White Paper",
+            "link": "https://github.com/MystenLabs/sui/blob/main/doc/paper/sui.pdf",
+            "external": true
+          }
+        ]
+      }
+    ]
+  },
+  "headerData": {
+    "menu": [
+      {
+        "title": "Learn",
+        "link": "/learn"
+      },
+      {
+        "title": "Build",
+        "link": "/build"
+      },
+      {
+        "title": "Explore",
+        "link": "/explore"
+      },
+      {
+        "title": "Contribute",
+        "link": "/contribute"
+      },
+      {
+        "title": "Discord",
+        "link": "https://discord.gg/sui",
+        "external": true
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/MystenLabs",
+        "external": true
+      }
+    ]
+  },
+  "HomePage": {
+    "title": "Sui Developer Hub",
+    "subTitle": "Welcome to Sui, a next-generation smart contract platform with high throughput, low latency, and an asset-oriented programming model powered by Move",
+    "partner": {
+      "title": "Partnerships Highlight",
+      "copy": "Explore examples and 3rd party projects built on Sui.",
+      "cta": {
+        "label": "Go",
+        "link": "/explore",
+        "external": false
+      }
+    },
+    "cta": [
+      {
+        "name": "See what's New",
+        "sublist": [
+          {
+            "name": "Program Sui Objects",
+            "url": "/build/programming-with-objects/index"
+          },
+          {
+            "name": "Learn Sui Tokenomics",
+            "url": "/learn/tokenomics/index"
+          },
+          {
+            "name": "Explore Sui DevNet!",
+            "url": "/explore/devnet"
+          }
+        ]
+      },
+      {
+        "name": "Get Started",
+        "sublist": [
+          {
+            "name": "Move Quick Start",
+            "url": "/build/move"
+          },
+          {
+            "name": "Wallet Quick Start",
+            "url": "/build/wallet"
+          }
+        ]
+      },
+      {
+        "name": "Learn about Sui",
+        "sublist": [
+          {
+            "name": "How Sui Works",
+            "url": "/learn/how-sui-works"
+          },
+          {
+            "name": "Sui Compared to other Blockchains",
+            "url": "/learn/sui-compared"
+          }
+        ]
+      },
+      {
+        "name": "See Sui in Action",
+        "sublist": [
+          {
+            "name": "Create and play Tic-Tac-Toe on Sui",
+            "url": "/explore/tutorials"
+          },
+          {
+            "name": "See two games with mutable, expressive NFTs",
+            "url": "/explore/prototypes"
+          }
+        ]
+      },
+      {
+        "name": "Build with Examples",
+        "sublist": [
+          {
+            "name": "Create an escrow",
+            "url": "https://github.com/MystenLabs/sui/blob/main/sui_programmability/examples/defi/sources/Escrow.move",
+            "external": true
+          },
+          {
+            "name": "Try A flash loan",
+            "url": "https://github.com/MystenLabs/sui/blob/main/sui_programmability/examples/defi/sources/FlashLender.move",
+            "external": true
+          },
+          {
+            "name": "See all examples",
+            "url": "/explore/examples"
+          }
+        ]
+      },
+      {
+        "name": "Join the Community",
+        "sublist": [
+          {
+            "name": "GitHub",
+            "url": "https://github.com/MystenLabs",
+            "external": true
+          },
+          {
+            "name": "Discord",
+            "url": "https://discord.gg/sui",
+            "external": true
+          },
+          {
+            "name": "Twitter",
+            "url": "https://twitter.com/mysten_labs/",
+            "external": true
+          },
+          {
+            "name": "Medium",
+            "url": "https://medium.com/mysten-labs/",
+            "external": true
+          }
+        ]
+      }
+    ]
+  }
+}

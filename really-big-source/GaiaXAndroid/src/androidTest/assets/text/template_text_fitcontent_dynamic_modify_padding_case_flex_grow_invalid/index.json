@@ -1,0 +1,17 @@
+{
+  "id": "template_text_fitcontent_dynamic_modify_padding_case_flex_grow_invalid",
+  "type": "gaia-template",
+  "layers": [
+    {
+      "id": "whole-container-wrapper",
+      "type": "view",
+      "layers": [
+        {
+          "id": "template_text_fitcontent_dynamic_modify_padding_case_flex_grow_invalid_child",
+          "type": "gaia-template",
+          "sub-type": "custom"
+        }
+      ]
+    }
+  ]
+}

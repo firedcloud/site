@@ -1,1 +1,7 @@
-Please take a look at our [Contributing](https://tinygo.org/docs/guides/contributing/) page on our web site for details. Thank you.
+# Contributors
+
+## How to Contribute
+
+See [Contributing to Sui](doc/src/contribute/index.md) for instructions on helping Sui grow.
+
+See [ISSUES.md](./ISSUES.md) for filing bug reports.

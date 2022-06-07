@@ -1,0 +1,36 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/generate-json-rpc-spec",
+    "crates/sui",
+    "crates/sui-adapter",
+    "crates/sui-adapter-transactional-tests",
+    "crates/sui-cluster-test",
+    "crates/sui-config",
+    "crates/sui-core",
+    "crates/sui-faucet",
+    "crates/sui-framework",
+    "crates/sui-framework-build",
+    "crates/sui-gateway",
+    "crates/sui-json",
+    "crates/sui-network",
+    "crates/sui-node",
+    "crates/sui-open-rpc",
+    "crates/sui-open-rpc-macros",
+    "crates/sui-storage",
+    "crates/sui-swarm",
+    "crates/sui-transactional-test-runner",
+    "crates/sui-types",
+    "crates/sui-verifier",
+    "crates/sui-verifier-transactional-tests",
+    "crates/test-utils",
+    "crates/workspace-hack",
+    "crates/x",
+]
+
+[profile.release]
+debug = false
+strip = "debuginfo"
+
+[profile.bench]
+debug = true

@@ -1,0 +1,204 @@
+{
+  "sideMenu": {
+    "title": "QUICK LINKS",
+    "items": [
+      {
+        "label": "DevNet",
+        "link": "explore/devnet"
+      },
+      {
+        "label": "Examples",
+        "link": "explore/examples"
+      },
+      {
+        "label": "Prototypes",
+        "link": "explore/prototypes"
+      }
+    ]
+  },
+  "docs": {
+    "learn": [
+      {
+        "label": "About Sui",
+        "fileName": "learn/about-sui",
+        "title": "About Sui",
+        "items": [
+          {
+            "label": "Sui Glossary",
+            "fileName": "learn/sui-glossary"
+          },
+          {
+            "label": "Sui Compared to Other Blockchains",
+            "fileName": "learn/sui-compared"
+          },
+          {
+            "label": "Why Move?",
+            "fileName": "learn/why-move"
+          },
+          {
+            "label": "How Sui Move differs from Core Move",
+            "fileName": "learn/sui-move-diffs"
+          },
+          {
+            "label": "Understand Sui Security",
+            "fileName": "learn/sui-security"
+          },
+          {
+            "label": "Sui White Paper",
+            "link": "https://github.com/MystenLabs/sui/blob/main/doc/paper/sui.pdf",
+            "external": true
+          }
+        ]
+      },
+      {
+        "label": "How Sui Works",
+        "fileName": "learn/how-sui-works",
+        "title": "How Sui Works",
+        "items": [
+          {
+            "label": "Manage Objects",
+            "fileName": "build/objects"
+          },
+          {
+            "label": "Conduct Transactions",
+            "fileName": "build/transactions"
+          },
+          {
+            "label": "Understand Validators",
+            "fileName": "learn/architecture/validators"
+          },
+          {
+            "label": "Sui Consensus Engine",
+            "fileName": "learn/architecture/consensus"
+          }
+        ]
+      },
+      {
+        "label": "Sui Tokenomics",
+        "fileName": "learn/tokenomics/index",
+        "title": "Sui Tokenomics",
+        "items": [
+          {
+            "label": "Sui Token",
+            "fileName": "learn/tokenomics/sui-token"
+          },
+          {
+            "label": "Sui Gas Pricing",
+            "fileName": "learn/tokenomics/gas-pricing"
+          },
+          {
+            "label": "Sui Storage Fund",
+            "fileName": "learn/tokenomics/storage-fund"
+          },
+          {
+            "label": "Proof-of-Stake",
+            "fileName": "learn/tokenomics/proof-of-stake"
+          },
+          {
+            "label": "Tokenomics White Paper",
+            "link": "https://github.com/MystenLabs/sui/blob/main/doc/paper/tokenomics.pdf",
+            "external": true
+          }
+        ]
+      }
+    ],
+    "build": [
+      {
+        "label": "Install Sui",
+        "fileName": "build/install"
+      },
+      {
+        "label": "Write Smart Contracts with Move",
+        "fileName": "build/move"
+      },
+      {
+        "label": "Create Sui Wallet",
+        "fileName": "build/wallet"
+      },
+      {
+        "label": "Program with Objects",
+        "fileName": "build/programming-with-objects/index",
+        "title": "Program with Objects",
+        "items": [
+          {
+            "label": "Object Basics",
+            "fileName": "build/programming-with-objects/ch1-object-basics"
+          },
+          {
+            "label": "Using Objects",
+            "fileName": "build/programming-with-objects/ch2-using-objects"
+          },
+          {
+            "label": "Immutable Objects",
+            "fileName": "build/programming-with-objects/ch3-immutable-objects"
+          },
+          {
+            "label": "Object Wrapping",
+            "fileName": "build/programming-with-objects/ch4-object-wrapping"
+          },
+          {
+            "label": "Child Objects",
+            "fileName": "build/programming-with-objects/ch5-child-objects"
+          }
+        ]
+      },
+      {
+        "label": "Use Sui RPC Server",
+        "fileName": "build/json-rpc"
+      },
+      {
+        "label": "Employ SuiJSON Format",
+        "fileName": "build/sui-json"
+      }
+    ],
+    "explore": [
+      {
+        "label": "DevNet",
+        "fileName": "explore/devnet"
+      },
+      {
+        "label": "Tutorial",
+        "fileName": "explore/tutorials"
+      },
+      {
+        "label": "Prototypes",
+        "fileName": "explore/prototypes"
+      },
+      {
+        "label": "Examples",
+        "fileName": "explore/examples"
+      },
+      {
+        "label": "Panzerdogs x Sui",
+        "fileName": "explore/panzerdogs"
+      },
+      {
+        "label": "SoWork x Sui",
+        "fileName": "explore/sowork"
+      }
+    ],
+    "contribute": [
+      {
+        "label": "Frequently Asked Questions",
+        "fileName": "contribute/faq"
+      },
+      {
+        "label": "Logging",
+        "fileName": "contribute/observability"
+      },
+      {
+        "label": "Research Papers",
+        "fileName": "contribute/research-papers"
+      },
+      {
+        "label": "Code of Conduct",
+        "fileName": "contribute/code-of-conduct"
+      },
+      {
+        "label": "About Mysten Labs",
+        "link": "https://mystenlabs.com/",
+        "external": true
+      }
+    ]
+  }
+}

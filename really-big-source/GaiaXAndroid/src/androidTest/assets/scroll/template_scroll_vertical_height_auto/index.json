@@ -1,0 +1,13 @@
+{
+  "id": "template_scroll_vertical_height_auto",
+  "type": "gaia-template",
+  "sub-type": "scroll",
+  "direction": "vertical",
+  "layers": [
+    {
+      "id": "template_scroll_vertical_height_auto_item",
+      "type": "gaia-template",
+      "sub-type": "custom"
+    }
+  ]
+}

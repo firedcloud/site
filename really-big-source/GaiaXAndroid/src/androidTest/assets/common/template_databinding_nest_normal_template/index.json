@@ -1,0 +1,11 @@
+{
+  "id": "template_databinding_nest_normal_template",
+  "type": "gaia-template",
+  "layers": [
+    {
+      "id": "template_databinding_nest_normal_template_child",
+      "type": "gaia-template",
+      "sub-type": "custom"
+    }
+  ]
+}

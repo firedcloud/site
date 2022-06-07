@@ -1,0 +1,10 @@
+{
+  "id": "template_view_property_background_image",
+  "type": "gaia-template",
+  "layers": [
+    {
+      "id": "empty_view",
+      "type": "view"
+    }
+  ]
+}
