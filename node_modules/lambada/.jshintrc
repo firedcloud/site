@@ -1,0 +1,15 @@
+{ "curly": true
+, "eqeqeq": true
+, "freeze": true
+, "immed": true
+, "latedef": true
+, "plusplus": true
+, "quotmark": false
+, "undef": true
+, "unused": true
+, "strict": false
+, "trailing": true
+, "loopfunc": false
+
+, "node": true
+}

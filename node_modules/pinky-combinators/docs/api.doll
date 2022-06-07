@@ -1,0 +1,11 @@
+-- Like function composition, but for promises
+compose :: [Promise a b] -> Promise [a b]
+
+-- Like compose, but left-to-right
+pipeline :: [Promise a b] -> Promise [a b]
+
+-- Resolved if all promises resolve
+all :: [Promise a b] -> Promise [a b]
+
+-- Resolved if any promise resolves
+any :: [Promise a b] -> Promise a b

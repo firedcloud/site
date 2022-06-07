@@ -1,0 +1,18 @@
+{
+	"name" : "nextjs",
+	"version": "v0.0.3",
+	"description": "The fastest async handler in node.js",
+	"keywords": ["next", "async", "async handler", "async functions"],
+	"bugs" : { 
+		"url" : "http://github.com/adamhalasz/next/issues"
+	, "email" : "mail@adamhalasz.com"
+	},
+	"license": "MIT",
+	"author" : {
+		"name"	: "Halász Ádám",
+		"email"	: "mail@adamhalasz.com",
+		"url"	:"http://adamhalasz.com/"
+	},
+	"main" : "index.js",
+	"engines" : { "node" : ">=0.8.21" }
+}
