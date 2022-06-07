@@ -1,0 +1,122 @@
+version: 2.1
+
+commands:
+  submodules:
+    steps:
+      - run:
+          name: "Pull submodules"
+          command: git submodule update --init
+  install-xtensa-toolchain:
+    parameters:
+      variant:
+        type: string
+    steps:
+      - run:
+          name: "Install Xtensa toolchain"
+          command: |
+            curl -L https://github.com/espressif/crosstool-NG/releases/download/esp-2020r2/xtensa-esp32-elf-gcc8_2_0-esp-2020r2-<<parameters.variant>>.tar.gz -o xtensa-esp32-elf-gcc8_2_0-esp-2020r2-<<parameters.variant>>.tar.gz
+            sudo tar -C /usr/local -xf xtensa-esp32-elf-gcc8_2_0-esp-2020r2-<<parameters.variant>>.tar.gz
+            sudo ln -s /usr/local/xtensa-esp32-elf/bin/xtensa-esp32-elf-ld /usr/local/bin/xtensa-esp32-elf-ld
+            rm xtensa-esp32-elf-gcc8_2_0-esp-2020r2-<<parameters.variant>>.tar.gz
+  llvm-source-linux:
+    steps:
+      - restore_cache:
+          keys:
+            - llvm-source-14-v1
+      - run:
+          name: "Fetch LLVM source"
+          command: make llvm-source
+      - save_cache:
+          key: llvm-source-14-v1
+          paths:
+            - llvm-project/clang/lib/Headers
+            - llvm-project/clang/include
+            - llvm-project/compiler-rt
+            - llvm-project/lld/include
+            - llvm-project/llvm/include
+  hack-ninja-jobs:
+    steps:
+      - run:
+          name: "Hack Ninja to use less jobs"
+          command: |
+            echo -e '#!/bin/sh\n/usr/bin/ninja -j3 "$@"' > /go/bin/ninja
+            chmod +x /go/bin/ninja
+  build-binaryen-linux:
+    steps:
+      - restore_cache:
+          keys:
+            - binaryen-linux-v1
+      - run:
+          name: "Build Binaryen"
+          command: |
+            make binaryen
+      - save_cache:
+          key: binaryen-linux-v1
+          paths:
+            - build/wasm-opt
+  test-linux:
+    parameters:
+      llvm:
+        type: string
+    steps:
+      - checkout
+      - submodules
+      - run:
+          name: "Install apt dependencies"
+          command: |
+            echo 'deb https://apt.llvm.org/buster/ llvm-toolchain-buster-<<parameters.llvm>> main' | sudo tee /etc/apt/sources.list.d/llvm.list
+            wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+            sudo apt-get update
+            sudo apt-get install --no-install-recommends \
+                llvm-<<parameters.llvm>>-dev \
+                clang-<<parameters.llvm>> \
+                libclang-<<parameters.llvm>>-dev \
+                lld-<<parameters.llvm>> \
+                gcc-avr \
+                avr-libc \
+                cmake \
+                ninja-build
+      - hack-ninja-jobs
+      - build-binaryen-linux
+      - restore_cache:
+          keys:
+            - go-cache-v2-{{ checksum "go.mod" }}-{{ .Environment.CIRCLE_PREVIOUS_BUILD_NUM }}
+            - go-cache-v2-{{ checksum "go.mod" }}
+      - llvm-source-linux
+      - run: go install -tags=llvm<<parameters.llvm>> .
+      - restore_cache:
+          keys:
+            - wasi-libc-sysroot-systemclang-v5
+      - run: make wasi-libc
+      - save_cache:
+          key: wasi-libc-sysroot-systemclang-v5
+          paths:
+            - lib/wasi-libc/sysroot
+      - run: make gen-device -j4
+      - run: make smoketest XTENSA=0
+      - save_cache:
+          key: go-cache-v2-{{ checksum "go.mod" }}-{{ .Environment.CIRCLE_BUILD_NUM }}
+          paths:
+            - ~/.cache/go-build
+            - /go/pkg/mod
+      - run: make fmt-check
+
+jobs:
+  test-llvm11-go115:
+    docker:
+      - image: circleci/golang:1.15-buster
+    steps:
+      - test-linux:
+          llvm: "11"
+  test-llvm12-go117:
+    docker:
+      - image: circleci/golang:1.17-buster
+    steps:
+      - test-linux:
+          llvm: "12"
+
+workflows:
+  test-all:
+    jobs:
+      - test-llvm11-go115
+      - test-llvm12-go117
