@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/74a6fd94a7d8469187a7827e48124b54)](https://app.codacy.com/gh/firedcloud/site?utm_source=github.com&utm_medium=referral&utm_content=firedcloud/site&utm_campaign=Badge_Grade_Settings)
 [![CodeFactor](https://www.codefactor.io/repository/github/firedcloud/site/badge)](https://www.codefactor.io/repository/github/firedcloud/site)
 [![codebeat badge](https://codebeat.co/badges/bf756543-f802-46bf-9e8c-e7cc261d752d)](https://codebeat.co/projects/github-com-firedcloud-firedcloud-main)
 # Playground for some cringe
