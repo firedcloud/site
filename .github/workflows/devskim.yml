@@ -7,7 +7,7 @@ name: DevSkim
 
 on:
   schedule:
-  - cron: '* * * * * ? *'
+  - cron: '* * * * *'
 
 jobs:
   lint:

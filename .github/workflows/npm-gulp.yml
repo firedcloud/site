@@ -2,11 +2,11 @@ name: NodeJS with Gulp
 
 on:
   schedule:
-  - cron: '0 * * ? * *'
+  - cron: '* * * * *'
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     strategy:
       matrix:

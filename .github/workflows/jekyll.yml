@@ -2,7 +2,7 @@ name: Jekyll site CI
 
 on:
   schedule:
-  - cron: '0 * * ? * *'
+  - cron: '* * * * *'
 
 jobs:
   build:
