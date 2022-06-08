@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/firedcloud/site/badge)](https://www.codefactor.io/repository/github/firedcloud/site)
+
 # Playground for some cringe
 Free to make commits and pull requests, i'll accept too
 
