@@ -28,7 +28,13 @@ const host = process.env.DB_HOST;
 const int_port_vpn = process.env.DB_PORT;
 const db = process.env.DB_NAME;
 const secret = "c54cn608708n^&&&!)R$!-3m0x58y9kjv9iii";
-
+app.use(
+    session({
+      secret: "totallysecret",
+      resave: true,
+      saveUninitialized: true,
+    })
+  );
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
