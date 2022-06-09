@@ -27,32 +27,30 @@ const user = process.env.DB_USER;
 const host = process.env.DB_HOST;
 const int_port_vpn = process.env.DB_PORT;
 const db = process.env.DB_NAME;
+import * as sanitizeHtml from "sanitize-html";
 const secret = "c54cn608708n^&&&!)R$!-3m0x58y9kjv9iii";
 app.use(
-    session({
-      secret: "totallysecret",
-      resave: true,
-      saveUninitialized: true,
-    })
-  );
+  session({
+    secret: "totallysecret",
+    resave: true,
+    saveUninitialized: true,
+  })
+);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-app.post("/", (req, res) => {
+app.post("/", sanitizeHtml, (req, res) => {
   if (req.body.name) {
-    res.send("Hello " + req.body.name);
+    res.send(sanitizeHtml("Hello " + req.body.name));
     if (req.body.name == "admin") {
       res.send("Hello " + req.body.name);
       if (app.get("env") === "development") {
         res.send("Hello " + req.body.name);
-      }
-      else if (app.get("env") === "production") {
+      } else if (app.get("env") === "production") {
         res.send("Hello " + req.body.name);
-        }
-      else {
+      } else {
         res.send("Hello " + req.body.name);
       }
-
     }
   } else {
     res.send("Hello World!");

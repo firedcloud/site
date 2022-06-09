@@ -14,6 +14,7 @@
     "copy-to-clipboard": "^3.3.1",
     "core-js-pure": "^3.22.8",
     "cors": "^2.8.5",
+    "create-react-app": "^5.0.1",
     "crypt-js": "^1.0.4",
     "crypto-js": "^4.1.1",
     "d": "^1.0.1",
@@ -59,6 +60,7 @@
     "react": "^18.1.0",
     "reactjs": "^1.0.0",
     "sail": "^0.0.0",
+    "sanitize-html": "^2.7.0",
     "semver": "^7.3.7",
     "session": "^0.1.0",
     "socketio": "^1.0.0",
@@ -71,5 +73,8 @@
     "wooz": "^1.0.4",
     "xml-js": "^1.6.11",
     "yarn": "^1.22.18"
+  },
+  "devDependencies": {
+    "@types/sanitize-html": "^2.6.2"
   }
 }
