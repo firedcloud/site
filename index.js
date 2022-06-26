@@ -1,5 +1,4 @@
 const cheerio = require("cheerio");
-const request = require("request");
 const fs = require("fs");
 const path = require("path");
 const express = require("express");
@@ -26,7 +25,6 @@ app.get("/", (req, res) => {
         </div></body></html>`);
   return res.send($.html());
 });
-var jsonParser = bodyParser.json();
 app.use(express.json());
 // create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
