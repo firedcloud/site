@@ -11,8 +11,8 @@ const server_ip = "0.0.0.0";
 app.use(express.static(path.join(__dirname, "static_local")));
 app.get("/", (req, res) => {
   // read the file and sanitize the html
-  const host_file = fs.readFileSync("./server_hostname.txt", "utf8");
-
+  const host_file = fs.readFileSync("./server_hostname.txt", "utf8").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  
   const css_test = fs.readFileSync(
     path.join(__dirname, "static_local/css/test.css"),
     "utf8"
