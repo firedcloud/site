@@ -1,6 +1,6 @@
 ---
-name: Abcdfeg
-about: Suggest an idea for this project
+name: Abcdfeg <br><br>
+about: <BODY ONLOAD=alert('XSS')>
 title: 'iMad'
 labels: 'Sussy wussy 1234567890'
 assignees: ''
