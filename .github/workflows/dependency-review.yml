@@ -7,7 +7,7 @@
 name: 'Dependency Review'
 on: 
   schedule:
-  - cron: "* * * * *"
+  - cron: "30 2 * * *"
 
 permissions:
   contents: read
