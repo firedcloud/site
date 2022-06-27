@@ -10,8 +10,13 @@ const server_ip = "0.0.0.0";
 app.use(express.static(path.join(__dirname, "static_local")));
 app.get("/", (req, res) => {
   // read the file and sanitize the html
-  const host_file = fs.readFileSync("./server_hostname.txt", "utf8").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/'/g, "&apos;").replace(/"/g, "&quot;");
-  
+  const host_file = fs
+    .readFileSync("./server_hostname.txt", "utf8")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/'/g, "&apos;")
+    .replace(/"/g, "&quot;");
+
   const css_test = fs.readFileSync(
     path.join(__dirname, "static_local/css/test.css"),
     "utf8"
@@ -44,7 +49,17 @@ app.post("/", urlencodedParser, (req, res) => {
     res.send("Something went wrong").end();
   }
 });
-
+app.get("/search", (req, res) => {
+  async function scrape() {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    await page.goto(`https://www.google.com/`);
+    const html = await page.content();
+    await browser.close();
+    return html;
+  }
+  scrape();
+});
 app.listen(port, () => {
   console.log(`Example app listening at http://${server_ip}:${port}`);
 });
