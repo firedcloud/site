@@ -52,6 +52,7 @@
     "nest": "^0.1.6",
     "nestjs": "^0.0.1",
     "next": "^12.1.6",
+    "node-fetch": "^3.2.6",
     "nodemailer": "^6.7.5",
     "nodemon": "^2.0.18",
     "nth-check": "^2.1.1",
