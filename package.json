@@ -83,7 +83,7 @@
     "wooz": "^1.0.4",
     "woozy": "^1.0.0",
     "xml-js": "^1.6.11",
-    "yarn": "^1.22.18"
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/sanitize-html": "^2.6.2"
