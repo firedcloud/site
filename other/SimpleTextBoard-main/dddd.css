@@ -1,0 +1,13 @@
+#element {
+    background-color: black;
+    animation: all
+}
+@keyframes fadeIn {
+    from {
+       background-color: black;
+    }
+    to {
+        background-color: red;
+    }
+
+}
