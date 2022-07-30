@@ -8,4 +8,4 @@ Free to make commits and pull requests, i'll accept too
 # Tags to appear in search
 
 npm js javascript java go golang script scripts test tests kotlin c# csharp ts rust python assembly c++ cpp cs adobe microsoft twitter zoom us america git github gitlab
-run bot file cancel review auto
+run bot file cancel review auto nitro svg testing ci/cd devops google airbnb lottie express handlebars mustache ejs facebook react nextjs pypi teelthon aiogram async mysql oracle discord opera chrome vivaldi macos windows linux gentoo arch novell rhel redhat red hat opensuse suse vscode visualstudio windows11 windows10 windows8 server iot hosting dedicated server vps vds kubernetes docker proxmox vmware esxi vcenter vcsa exploit target walmart netflix amazon billing lays nosql mssql restapi rest api xhr miner mining
