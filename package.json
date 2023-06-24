@@ -70,7 +70,7 @@
     "request": "^2.88.2",
     "sail": "^0.0.0",
     "sanitize-html": "^2.7.0",
-    "semver": "^7.3.7",
+    "semver": "^7.5.2",
     "session": "^0.1.0",
     "socketio": "^1.0.0",
     "sprintf-js": "^1.1.2",
