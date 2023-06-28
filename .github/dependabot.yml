@@ -5,7 +5,32 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
+  - package-ecosystem: "npm"
+    directory: "/" # Location of package manifests
+    versioning-strategy: increase
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "pip"
+    directory: "/" # Location of package manifests
+    versioning-strategy: increase
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "docker"
+    directory: "/" # Location of package manifests
+    versioning-strategy: increase
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "github-actions"
+    directory: "/" # Location of package manifests
+    versioning-strategy: increase
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/" # Location of package manifests
+    versioning-strategy: increase
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gomod"
     directory: "/" # Location of package manifests
     versioning-strategy: increase
     schedule:
