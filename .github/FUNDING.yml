@@ -10,4 +10,5 @@ liberapay: qwerty # Replace with a single Liberapay username
 issuehunt: cringe # Replace with a single IssueHunt username
 otechie: coolapp # Replace with a single Otechie username
 lfx_crowdfunding: beloved # Replace with a single LFX Crowdfunding project-name e.g., cloud-foundry
-custom: ['https://example.com/some-url']
+custom: ['https://example.com/some-url', 'https://gggggggggggggggggg.com/gffffffffffffffffffwwwww', 'https://exampdddddddddle.com/somedddddddddddddddddd-url'] # Replace with up to 3 custom sponsorship URLs
+```
