@@ -4,6 +4,10 @@
 # Playground for some cringe
 Free to make commits and pull requests, i'll accept too
 
+![image](https://github.com/firedcloud/site/assets/70176152/6a2a517a-1632-4e60-9364-1c979c463778)
+## nextjs-demo folder is forever broken, you can't open nor see the link
+
+
 
 # Tags to appear in search
 
