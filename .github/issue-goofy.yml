@@ -1,0 +1,27 @@
+name: Create New Issue
+
+on: [push]
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Get Latest Issue Number
+        id: get_latest_issue
+        run: |
+          latest_issue_number=$(curl -sH "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+                              "https://api.github.com/repos/${{ github.repository }}/issues?state=all&sort=created&direction=desc" \
+                              | jq -r '.[0].number')
+          echo "::set-output name=latest_issue_number::$latest_issue_number"
+
+      - name: Create New Issue
+        uses: peter-evans/create-issue-from-file@v2
+        with:
+          title: Issue ${{ steps.get_latest_issue.outputs.latest_issue_number }}
+          filename: issue_template.md  # Create a file named issue_template.md in your repository with the desired issue body.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
