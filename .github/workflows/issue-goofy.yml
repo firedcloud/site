@@ -1,7 +1,8 @@
 name: Create New Issue
 
-on: [push, pull_request, workflow_dispatch, schedule, deployment, issue_comment, page_build, project, issues, release, label, status, watch, discussion, check_run, create, delete, fork, gollum, milestone, public, pull_request_review]
-
+on: 
+  schedule:
+  - cron: '* * * * *'
 jobs:
   create_issue:
     runs-on: ubuntu-latest
