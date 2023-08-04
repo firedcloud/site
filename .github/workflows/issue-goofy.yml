@@ -24,5 +24,6 @@ jobs:
         with:
           title: Issue ${{ steps.get_latest_issue.outputs.latest_issue_number }}
           content-filepath: ./issue_template.md
+          labels: 'auto-generated'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
