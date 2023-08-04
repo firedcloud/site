@@ -1,6 +1,6 @@
 name: Create New Issue
 
-on: [push]
+on: [push, pull_request]
 
 jobs:
   create_issue:
@@ -22,6 +22,6 @@ jobs:
         uses: peter-evans/create-issue-from-file@v2
         with:
           title: Issue ${{ steps.get_latest_issue.outputs.latest_issue_number }}
-          filename: issue_template.md  # Create a file named issue_template.md in your repository with the desired issue body.
+          content-filepath: ./issue_template.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
