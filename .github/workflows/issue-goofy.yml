@@ -19,7 +19,7 @@ jobs:
           echo "::set-output name=latest_issue_number::$latest_issue_number"
 
       - name: Create New Issue
-        uses: peter-evans/create-issue-from-file@v2
+        uses: peter-evans/create-issue-from-file@v4
         with:
           title: Issue ${{ steps.get_latest_issue.outputs.latest_issue_number }}
           content-filepath: ./issue_template.md
