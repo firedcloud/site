@@ -1,8 +1,8 @@
 name: Create New Issue
 
-on: 
+on:
   schedule:
-  - cron: '* * * * *'
+    - cron: "* * * * *"
 jobs:
   create_issue:
     runs-on: ubuntu-latest
@@ -24,6 +24,13 @@ jobs:
         with:
           title: Issue ${{ steps.get_latest_issue.outputs.latest_issue_number }}
           content-filepath: ./issue_template.md
-          labels: 'auto-generated'
+          labels: |
+            'auto-generated' 
+            'new-issue' 
+            'issue'
+            'WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW'
+            'TEST_AS_LONG_I_TYPE_SOMETHING_THAT_IS_LONGER_THAN_50_CHARACTERS'
+            'AMAZING_LABEL'
+            'TEST_AS_LONG_I_TYPE_SOMETHING_THAT_IS_LONGER_THAN_50_CHARACTERS_TEST'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
