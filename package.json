@@ -58,7 +58,7 @@
     "lte": "^0.0.1-beta.1",
     "mocha": "^10.0.0",
     "moment": "^2.29.3",
-    "mongoose": "^6.4.6",
+    "mongoose": "^7.4.3",
     "mongosh": "^1.10.1",
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
