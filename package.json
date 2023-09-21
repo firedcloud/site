@@ -40,7 +40,7 @@
     "govno": "^0.1.0",
     "graceful": "^1.0.2",
     "graceful-fs": "^4.2.10",
-    "graphql": "^16.5.0",
+    "graphql": "^16.8.1",
     "helmet": "^5.1.0",
     "hoist-non-react-statics": "^3.3.2",
     "hui": "^1.1.0",
