@@ -24,7 +24,7 @@
     "cors": "^2.8.5",
     "create-react-app": "^5.0.1",
     "crypt-js": "^1.0.4",
-    "crypto-js": "^4.1.1",
+    "crypto-js": "^4.2.0",
     "d": "^1.0.1",
     "ember": "^1.0.3",
     "emoji-mart": "^5.5.2",
